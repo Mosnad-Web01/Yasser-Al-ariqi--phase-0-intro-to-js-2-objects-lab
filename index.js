@@ -1,1 +1,28 @@
-// Write your solution in this file!
+let employee = {
+  name: "Yasser",
+  streetAddress: "30 street",
+};
+
+
+function updateEmployeeWithKeyAndValue(employee, key, value){
+    employee = {...employee , [key] : value}
+    return employee
+}
+
+
+function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
+    employee[key] =value
+    return employee
+}
+
+function deleteFromEmployeeByKey(employee, key){
+    employee = {...employee}
+    delete employee[key]
+    return employee
+}
+
+function destructivelyDeleteFromEmployeeByKey(employee, key){
+    
+    delete employee[key]
+    return employee
+}
